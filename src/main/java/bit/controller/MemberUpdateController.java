@@ -36,7 +36,7 @@ public class MemberUpdateController extends HttpServlet {
         int cnt = dao.memberUpdate(vo);
         if (cnt > 0) {
             //가입성공
-            resp.sendRedirect("/web/memberList.do");
+            resp.sendRedirect("/MVC03/memberList.do");
         } else {
             // 가입실패 -> 예외실패 WAS
             throw new ServletException("not insert");

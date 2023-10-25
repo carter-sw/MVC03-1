@@ -23,7 +23,7 @@ public class MemberDeleteController extends HttpServlet {
         MemberDAO dao = new MemberDAO();
         int cnt = dao.memberDelete(num);
         if(cnt >0){
-            resp.sendRedirect("/web/memberList.do");
+            resp.sendRedirect("/MVC03/memberList.do");
         }else {
             throw new ServletException("not insert");
         }
